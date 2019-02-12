@@ -1,0 +1,96 @@
+html {
+    touch-action: manipulation;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+html,body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+    color: #333;    
+}
+
+audio,canvas,iframe,img,svg,video {
+    vertical-align: middle
+}
+
+*,::after,::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: .5rem;  
+    background: #fff;
+    color: #333; 
+    caret-color: #ff1100;
+    -webkit-appearance: textfield;
+    flex: 1;
+}
+input[type="text"]:focus {
+    border-color: rgba(223,225,229,0);
+    box-shadow: 0 1px 4px 0 rgba(116, 117, 121, 0.28);
+}
+input[type="text"]:focus-within {
+    background-color: #fff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+#root{
+    height: 100vh;    
+}
+
+.p-wrap {
+    width: 100%;    
+    margin: 0 auto;
+    overflow: hidden;
+}
+@media all and (min-width: 768px) {
+    .p-wrap {
+        padding: 0 2.5rem;
+        max-width: 1407px;
+    }
+}
+
+.btn-invisible {
+    border: 0;
+    background: 0; 
+    outline: none;   
+}
+
+
+/*
+Text meant only for screen readers.
+Provides support for themes that do not bundle this CSS yet.
+@see https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core/
+***********************************/
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute ! important;
+	width: 1px;
+	word-wrap: normal ! important;
+}

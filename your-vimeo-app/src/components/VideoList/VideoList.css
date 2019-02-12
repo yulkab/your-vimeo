@@ -1,0 +1,69 @@
+.c-list {
+    display: flex;
+    flex-direction: column; 
+    margin: 1.25rem 0;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+h2.c-list-heading  {
+    position: relative;
+    display: inline-block;   
+    font-size: 1rem;
+    margin: 0;
+}
+
+.c-lucky {
+    text-align: center;
+}
+button.c-lucky-btn {    
+    font-size: 1rem;
+    padding: 11px 23px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff1100;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.m-hide {
+    display: none!important;
+}
+.m-show {
+    display: inherit!important;
+}
+
+@media all and (min-width: 768px) {
+    .m-hide {
+        display: inherit!important;
+    }
+    .m-show {
+        display: none!important;
+    }
+    .c-list {
+        flex-flow: row wrap;
+        margin: 65px -14px;
+    }
+
+    h2.c-list-heading  {  
+        max-width: 60%;
+        font-size: 2rem;
+    }
+    h2.c-list-heading::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        bottom: -1.25rem;
+        background-color: #ff1100;
+        left: 0;
+        right: 0;
+    }
+    .c-lucky {
+        text-align: left;
+    }
+    button.c-lucky-btn {    
+        font-size: 1.45rem;
+        padding: 15px 30px;
+        border-radius: 4px;        
+    }
+}
